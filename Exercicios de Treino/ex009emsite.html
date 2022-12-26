@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veja sua Nacionalidade</title>
+</head>
+
+<body>
+    <h1>Descubra aqui se você é Brasileiro ou Estrangeiro!</h1>
+    <p>Insira abaixo o país em que você nasceu</p>
+    <input type="text" name="caixa" id="caixa">
+    <input type="button" value="Descubra" onclick='descubra()'>
+    <div id='res'>
+
+    </div>
+    <script>
+        function descubra() {
+            var país = document.querySelector('input#caixa')
+            var res = document.querySelector('div#res')
+            var paístxt = (país.value)
+
+            if (paístxt == 'Brasil') {
+                res.innerHTML = 'Você é Brasileiro!'
+            } else {
+                res.innerHTML = 'Você é Estrangeiro!'
+            }
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

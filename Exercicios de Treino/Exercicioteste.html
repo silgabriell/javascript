@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu exercício de teste</title>
+    <style> body {
+        color: rgb(247, 223, 7);
+        background-color: rgb(9, 89, 92);
+        font: normal 20pt Arial;
+    }
+    h1 {
+        color: black;
+    }
+        </style>
+</head>
+<body>
+    <h1>Este é o meu site de treino</h1>
+    <p>Site para realizar operações de adição</p>
+    <script>
+        var n1 = Number(window.prompt('Digite um número aqui')) // Number.parseInt(n) para forçar número inteiro
+        var n2 = Number(window.prompt('Digite mais um número aqui')) // Number.parseFloat(n) para ter um número quebrado
+        var material = Number(window.prompt('Quantos materiais você tem?'))
+        var idade = Number(window.prompt('Digite a sua idade: '))
+        var resultado = n1 + n2
+        document.write(`${material >= 3 ? 'Parabéns, você tem 3 ou mais materiais': 'Infelizmente você tem menos de 3 materiais'}</br>`)
+        document.write(`O resultado da soma entre ${n1} e ${n2} é o número ${resultado}</br>`)
+        document.write(`${idade >= 18 ? 'Você tem mais de 18 anos, parabéns.': 'Você tem menos de 18 anos, vacilou'}`)
+    </script>
+    
+</body>
+</html>

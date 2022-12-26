@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanchonete</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Faça seu Pedido</h1>
+    </header>
+    <section>
+        <div>
+            <h1>Escolha um dos itens do cardápio</h1>
+            <input type="number" name="txtnum" id="txtnum"></br>
+            1- Hamburguer</br>
+            2- Batata Frita</br>
+            3- Costela
+        </div>
+        
+        <div id='acomp'> Escolha o acompanhamento de seu hamburguer</br>
+            <input type="radio" name="radmist" id="tomat">
+            <label for="tomat">Tomate</label>
+            <input type="radio" name="radmist" id="queijo">
+            <label for="queijo">Queijo Cheddar</label>
+            <input type="radio" name="radmist" id="bacon">
+            <label for="bacon">Bacon</label>
+        </div>
+            <div>
+                <input type="button" value="Confirmar" onclick="confirmar()">
+            </div>
+
+            <div id='res'>
+                Confirme para saber o seu pedido!
+            </div>
+    </section>
+
+    <footer>
+        <p>&copy; Lanchonete</p>
+    </footer>
+    <script src="javascript.js"></script>
+
+</body>
+
+</html>

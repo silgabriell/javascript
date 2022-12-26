@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando...</title>
+</head>
+<body>
+    <h1>Esta é uma calculadora que apenas soma</h1>
+    <p>Faça sua soma abaixo</p>
+    <input type="button" value="somar" onclick="Somar()"> <!--Cria um botao somar-->
+    <input type="number" class="strg1" id="strg1"> + <!--Cria a caixa para colocar o primeiro número-->
+    <input type="number" class="strg2" id="strg2"> <!--Cria a caixa para colocar o segundo número-->
+    <div class='res'>Resultado</div>
+
+    <script>
+          
+        function Somar() {
+            var strg11 = document.querySelector('input.strg1') // var strg11 está armazenando o valor colocado no input strg1
+            var strg22 = document.querySelector('input.strg2') // var strg22 está armazenando o valor colocado no input strg2
+            var res = document.querySelector('div.res') // var res armazena a div Resultado
+            var nstrg11 = Number(strg11.value) // var nstrg11 armazena o valor que será colocado em strg11 forçando ser em número
+            var nstrg22 = Number(strg22.value) // var nstrg22 armazena o valor que será colocado em strg22 forçando ser um número
+            var s = nstrg11 + nstrg22 // var s irá realizar a soma dos valores armazenados em nstrg11 e nstrg22
+            res.innerText = `O resultado entre a soma de ${nstrg11} e ${nstrg22} é: ${s}` // innerText irá substituir a palavra resultado na div pelo real resultado da soma
+        }
+        </script>
+    
+</body>
+</html>

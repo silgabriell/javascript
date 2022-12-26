@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de funcao</title>
+    <style>
+        div#opa {
+            font: normal 30pt Arial;
+            background-color: violet;
+            color: white;
+            width: 600px;
+            height: 600px;
+            line-height: 600px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id='opa'>
+        Venha aqui!
+
+
+
+    </div>
+    <script>
+        var o = document.getElementById('opa')
+        o.addEventListener('click', clicar)
+        o.addEventListener('mouseout', sair)
+        o.addEventListener('mouseenter', entrar)
+        o.addEventListener('mousedown', segurou)
+        function entrar() {
+            o.innerText = 'Você entrou!'
+            o.style.background = 'orange'
+        }
+        function sair() {
+            o.innerText = 'Você saiu!'
+            o.style.background = 'yellow'
+
+        }
+        function clicar() {
+            o.innerText = 'Você Clicou!'
+            o.style.background = 'blue'
+        }
+        function segurou() {
+            o.innerText = 'Você está segurando!'
+            o.style.background = 'green'
+        }
+        
+
+
+
+    </script>
+    
+</body>
+</html>
